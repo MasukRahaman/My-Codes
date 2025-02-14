@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Shoe's</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(219, 211, 211);
+            font-family: 'Segoe UI';
+        }
+
+        header {
+            background-color: rgb(240, 230, 217);
+            position: sticky;
+            top: 0;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 15px;
+            margin: 0 10px;
+        }
+
+        nav ul li:hover {
+            background-color: rgb(157, 191, 214);
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 360px;
+            width: 400px;
+            display: inline;
+        }
+
+        .img1 {
+            position: relative;
+            left: -85px;
+
+        }
+
+        .img2 {
+            float: right;
+            position: relative;
+            right: -85px;
+        }
+
+        .pera {
+            width: 500px;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            height: 200px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .img1,
+            .img2 {
+                position: static;
+                float: none;
+                width: 80%;
+                margin: 10px auto;
+            }
+
+            .pera {
+                width: 90%;
+                height: auto;
+                padding: 20px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+
+            .logo {
+                height: 100px;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Service</li>
+                <li>About Us</li>
+                <li>FEQ</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="img1" src="sneaker-1.jpg" alt="img1">
+        <div class="pera">
+            <p>Welcome to our store. It's quite cozy and affordable. Get yours today!</p>
+        </div>
+        <img class="img2" src="sneaker-2.jpg" alt="img2">
+
+        <img src="off2.webp" alt="img3" class="logo">
+    </main>
+</body>
+
+</html>
