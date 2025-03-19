@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0d0d0d;
+            height: 100vh;
+            perspective: 1000px;
+            margin: 0;
+        }
+
+        .card {
+            height: 350px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff0077, #7a00ff);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(30deg) rotateX(20deg) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 0, 255, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">Hover Me</div>
+</body>
+
+</html>
